@@ -3,6 +3,9 @@
 A modern and responsive **Restaurant Hub** frontend website built using **HTML, CSS, and JavaScript**.
 
 Restaurant Hub allows users to explore restaurants, filter restaurants by food category, search for restaurants or dishes, add items to a cart, and simulate the checkout process.
+<p>
+  Live - https://prince-kr-gupta.github.io/Resto-Hub/
+</p>
 
 ## 🚀 Features
 
