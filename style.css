@@ -355,14 +355,27 @@ a {
 
     border: 1px solid #eee;
 
-    transition: 0.3s;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .restaurant-card:hover {
     transform: translateY(-7px);
 
     box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.1);
+        0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Smooth food emoji hover effect */
+
+.restaurant-card .food-emoji {
+    transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover .food-emoji {
+    transform: scale(1.08);
 }
 
 .restaurant-image {
