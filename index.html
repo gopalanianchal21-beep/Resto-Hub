@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant hub
+
+    </title>
+<link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            🍽️ <span>Restaurant</span>Hub
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#restaurants">Restaurants</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button id="themeBtn" class="icon-btn">
+                🌙
+            </button>
+
+            <button id="cartBtn" class="cart-btn">
+                🛒 Cart
+                <span id="cartCount">0</span>
+            </button>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                🍴 Discover amazing food
+            </span>
+
+            <h1>
+                Find the best food
+                <span>near you.</span>
+            </h1>
+
+            <p>
+                Explore restaurants, discover delicious dishes,
+                and order your favorite meals from one place.
+            </p>
+
+            <div class="search-box">
+
+                <span>🔍</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search restaurants or food..."
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <div class="food-circle">
+                🍕
+            </div>
+
+            <div class="floating-card card-one">
+                ⭐ 4.9 Rating
+            </div>
+
+            <div class="floating-card card-two">
+                🚚 Fast Delivery
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories-section" id="categories">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="small-title">EXPLORE</span>
+                <h2>Popular Categories</h2>
+            </div>
+
+        </div>
+
+        <div class="categories">
+
+            <button class="category active" data-category="all">
+                <span>🍽️</span>
+                <p>All</p>
+            </button>
+
+            <button class="category" data-category="pizza">
+                <span>🍕</span>
+                <p>Pizza</p>
+            </button>
+
+            <button class="category" data-category="burger">
+                <span>🍔</span>
+                <p>Burgers</p>
+            </button>
+
+            <button class="category" data-category="indian">
+                <span>🍛</span>
+                <p>Indian</p>
+            </button>
+
+            <button class="category" data-category="chinese">
+                <span>🥡</span>
+                <p>Chinese</p>
+            </button>
+
+            <button class="category" data-category="dessert">
+                <span>🍰</span>
+                <p>Desserts</p>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RESTAURANTS ================= -->
+
+    <section class="restaurants-section" id="restaurants">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="small-title">TOP CHOICES</span>
+                <h2>Popular Restaurants</h2>
+            </div>
+
+            <span id="resultCount"></span>
+
+        </div>
+
+
+        <div class="restaurant-grid" id="restaurantGrid">
+
+
+            <!-- Restaurant 1 -->
+
+            <article
+                class="restaurant-card"
+                data-name="The Italian Corner"
+                data-category="pizza"
+            >
+
+                <div class="restaurant-image pizza-bg">
+
+                    <span class="food-emoji">🍕</span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                    <span class="discount">
+                        20% OFF
+                    </span>
+
+                </div>
+
+                <div class="restaurant-info">
+
+                    <div class="restaurant-title">
+
+                        <h3>The Italian Corner</h3>
+
+                        <span class="rating">
+                            ⭐ 4.8
+                        </span>
+
+                    </div>
+
+                    <p class="cuisine">
+                        Italian • Pizza • Pasta
+                    </p>
+
+                    <div class="restaurant-details">
+                        <span>🚚 25-30 min</span>
+                        <span>₹₹</span>
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        data-food="Margherita Pizza"
+                        data-price="249"
+                    >
+                        Order Now
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Restaurant 2 -->
+
+            <article
+                class="restaurant-card"
+                data-name="Burger House"
+                data-category="burger"
+            >
+
+                <div class="restaurant-image burger-bg">
+
+                    <span class="food-emoji">🍔</span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                    <span class="discount">
+                        15% OFF
+                    </span>
+
+                </div>
+
+                <div class="restaurant-info">
+
+                    <div class="restaurant-title">
+
+                        <h3>Burger House</h3>
+
+                        <span class="rating">
+                            ⭐ 4.7
+                        </span>
+
+                    </div>
+
+                    <p class="cuisine">
+                        Burgers • Fries • Beverages
+                    </p>
+
+                    <div class="restaurant-details">
+                        <span>🚚 20-25 min</span>
+                        <span>₹₹</span>
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        data-food="Classic Burger"
+                        data-price="199"
+                    >
+                        Order Now
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Restaurant 3 -->
+
+            <article
+                class="restaurant-card"
+                data-name="Spice Kingdom"
+                data-category="indian"
+            >
+
+                <div class="restaurant-image indian-bg">
+
+                    <span class="food-emoji">🍛</span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                    <span class="discount">
+                        25% OFF
+                    </span>
+
+                </div>
+
+                <div class="restaurant-info">
+
+                    <div class="restaurant-title">
+
+                        <h3>Spice Kingdom</h3>
+
+                        <span class="rating">
+                            ⭐ 4.9
+                        </span>
+
+                    </div>
+
+                    <p class="cuisine">
+                        North Indian • Biryani
+                    </p>
+
+                    <div class="restaurant-details">
+                        <span>🚚 30-35 min</span>
+                        <span>₹₹₹</span>
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        data-food="Chicken Biryani"
+                        data-price="299"
+                    >
+                        Order Now
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Restaurant 4 -->
+
+            <article
+                class="restaurant-card"
+                data-name="Dragon Wok"
+                data-category="chinese"
+            >
+
+                <div class="restaurant-image chinese-bg">
+
+                    <span class="food-emoji">🥡</span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                    <span class="discount">
+                        10% OFF
+                    </span>
+
+                </div>
+
+                <div class="restaurant-info">
+
+                    <div class="restaurant-title">
+
+                        <h3>Dragon Wok</h3>
+
+                        <span class="rating">
+                            ⭐ 4.6
+                        </span>
+
+                    </div>
+
+                    <p class="cuisine">
+                        Chinese • Noodles • Momos
+                    </p>
+
+                    <div class="restaurant-details">
+                        <span>🚚 25-30 min</span>
+                        <span>₹₹</span>
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        data-food="Veg Noodles"
+                        data-price="179"
+                    >
+                        Order Now
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Restaurant 5 -->
+
+            <article
+                class="restaurant-card"
+                data-name="Sweet Heaven"
+                data-category="dessert"
+            >
+
+                <div class="restaurant-image dessert-bg">
+
+                    <span class="food-emoji">🍰</span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                    <span class="discount">
+                        30% OFF
+                    </span>
+
+                </div>
+
+                <div class="restaurant-info">
+
+                    <div class="restaurant-title">
+
+                        <h3>Sweet Heaven</h3>
+
+                        <span class="rating">
+                            ⭐ 4.8
+                        </span>
+
+                    </div>
+
+                    <p class="cuisine">
+                        Cakes • Ice Cream • Desserts
+                    </p>
+
+                    <div class="restaurant-details">
+                        <span>🚚 15-20 min</span>
+                        <span>₹₹</span>
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        data-food="Chocolate Cake"
+                        data-price="229"
+                    >
+                        Order Now
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Restaurant 6 -->
+
+            <article
+                class="restaurant-card"
+                data-name="Urban Cafe"
+                data-category="indian"
+            >
+
+                <div class="restaurant-image cafe-bg">
+
+                    <span class="food-emoji">☕</span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+                <div class="restaurant-info">
+
+                    <div class="restaurant-title">
+
+                        <h3>Urban Cafe</h3>
+
+                        <span class="rating">
+                            ⭐ 4.5
+                        </span>
+
+                    </div>
+
+                    <p class="cuisine">
+                        Cafe • Snacks • Coffee
+                    </p>
+
+                    <div class="restaurant-details">
+                        <span>🚚 15-20 min</span>
+                        <span>₹</span>
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        data-food="Cold Coffee"
+                        data-price="149"
+                    >
+                        Order Now
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <p id="noResults" class="no-results">
+            😕 No restaurants found.
+        </p>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <span class="small-title">
+                ABOUT US
+            </span>
+
+            <h2>
+                Your favorite food,
+                <span>all in one place.</span>
+            </h2>
+
+            <p>
+                Restaurant Hub helps you discover local restaurants
+                and explore delicious food from different cuisines.
+            </p>
+
+            <div class="stats">
+
+                <div>
+                    <strong>100+</strong>
+                    <span>Restaurants</span>
+                </div>
+
+                <div>
+                    <strong>50+</strong>
+                    <span>Dishes</span>
+                </div>
+
+                <div>
+                    <strong>4.8⭐</strong>
+                    <span>Average Rating</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🍽️ RestaurantHub
+        </div>
+
+        <p>
+            Made with ❤️ using HTML, CSS & JavaScript
+
+        </p>
+        <p>
+            Developer - Prince Kumar Gupta
+            
+        </p>
+
+        <p>
+            © 2026 RestaurantHub. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= CART SIDEBAR ================= -->
+
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+
+            <h2>🛒 Your Cart</h2>
+
+            <button id="closeCart">
+                ✕
+            </button>
+
+        </div>
+
+        <div id="cartItems" class="cart-items">
+
+            <p class="empty-cart">
+                Your cart is empty 😋
+            </p>
+
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="total">
+                <span>Total</span>
+                <strong>₹<span id="cartTotal">0</span></strong>
+            </div>
+
+            <button id="checkoutBtn" class="checkout-btn">
+                Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= CHECKOUT MODAL ================= -->
+
+    <div class="modal" id="checkoutModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="closeModal">
+                ✕
+            </button>
+
+            <div class="success-icon">
+                🎉
+            </div>
+
+            <h2>Order Ready!</h2>
+
+            <p>
+                
+                Your order has been placed successfully.
+            </p>
+
+            <button id="doneBtn" class="checkout-btn">
+                Done
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+</body>
+</html>
