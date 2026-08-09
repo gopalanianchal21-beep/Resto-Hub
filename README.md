@@ -45,13 +45,13 @@ Restaurant-Hub/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/Restaurant-Hub.git
+git clone https://github.com/prince-kr-gupta/Resto-Hub.git
 ```
 
 ### 2. Open the project
 
 ```bash
-cd Restaurant-Hub
+cd Resto Hub
 ```
 
 ### 3. Run the website
@@ -131,9 +131,9 @@ Possible future features include:
 
 ## 👨‍💻 Author
 
-**Prince Kumar**
+**Prince Kumar Gupta**
 
-Frontend Developer | C++ & DSA Learner
+Frontend Developer
 
 ## ⭐ If you like this project
 
