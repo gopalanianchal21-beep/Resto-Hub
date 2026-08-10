@@ -1,6 +1,6 @@
 # 🍽️ Restaurant Hub
 
-A modern and responsive **Restaurant Hub** frontend website built using **HTML, CSS, and JavaScript**.
+A modern and responsive **Resto Hub** frontend website built using **HTML, CSS, and JavaScript**.
 
 Restaurant Hub allows users to explore restaurants, filter restaurants by food category, search for restaurants or dishes, add items to a cart, and simulate the checkout process.
 <p>
