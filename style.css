@@ -826,6 +826,11 @@ body.dark .search-box,
 body.dark .cart-sidebar,
 body.dark .modal-content {
     background: #1e1e1e;
+    color:white;
+}
+
+body.dark .category p{
+    color:white;
 }
 
 body.dark .navbar a,
